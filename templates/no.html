@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noroshi</title>
+    <link rel="icon" type="image/x-icon" href="/Users/musashi/noroshi/favicon.png">
+    <link rel="apple-touch-icon" sizes="300x300" href="/Users/musashi/noroshi/favicon.png">
+    
+    <style>
+        body{
+            text-align:center;
+            background-image:url(/Users/musashi/noroshi/pic.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            background-image: url(/Users/musashi/noroshi/ooo.png);
+        }
+        
+        h1{
+            color: white;
+            size: 100px;
+            margin-top: 100px;
+        }
+        p{
+            color: peru;
+        }
+        
+        .header-5 {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #333;
+        margin: 0px;
+        padding: 0px;
+        }
+
+        .header-inner {
+        display: flex;
+        align-items: center;
+        max-width: 1024px;
+        height: 60px;
+        margin: 0 auto;
+        font-size: 1.2em;
+        }
+
+        .header-nav-list {
+        display: inline-block;
+        }
+
+        .header-nav-item {
+        float: left;
+        padding: 12px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        list-style: none;
+        }
+
+        .header-nav-item a {
+        text-decoration: none;
+        }
+
+        .header-ham {
+        display: none;
+        }
+
+        .menu2 {
+        width: 20px;
+        height: 3px;
+        margin: 4px 0;
+        margin-right: 0;
+        background-color: #333;
+        }
+
+        .select {
+        color: #444;
+        }
+
+        .header-nav-item:hover {
+        background: #eee;
+        }
+
+        .logo img {
+        width: 70px;
+        }
+
+        @media screen and (max-width: 480px) {
+        .header-nav-list {
+            display: none;
+        }
+
+        .header-nav {
+            margin: 0 0 0 auto;
+        }
+
+        .header-ham {
+            display: block;
+        }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="header-5">
+        <div class="header-inner">
+          <div class="logo">
+            <img src="/Users/musashi/noroshi/logo.png">
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <a href="about.html"><li class="header-nav-item">About</li></a>
+              <a href="/Users/musashi/noroshi/templates/members.html"><li class="header-nav-item">Members</li></a>
+              <a href="/Users/musashi/noroshi/templates/contact.html"><li class="header-nav-item">Contact</li></a>
+            </ul>
+            <div class="header-ham">
+              <div class="menu2"></div>
+              <div class="menu2"></div>
+              <div class="menu2"></div>
+            </div>
+          </nav>
+        </div>
+    </header>
+    
+    <h1>Noroshi</h1>
+    
+
+
+
+    <script src="/Users/musashi/noroshi/no.js"></script>
+</body>
+</html>

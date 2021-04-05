@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noroshi</title>
+    <link rel="icon" type="image/x-icon" href="/Users/musashi/noroshi/favicon.png">
+    <link rel="apple-touch-icon" sizes="300x300" href="/Users/musashi/noroshi/favicon.png">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <style>
+        body{
+            text-align: center;
+        }
+        .btn-social-flat{
+            margin-top: 80px
+        }
+        .btn-social-icon-instagram {
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            color: #2e6ca5;
+            font-size: 25px;
+            text-decoration: none;
+            margin-top: 100px;
+        }
+
+        .btn-social-icon-instagram:hover {
+            color:#668ad8;
+            transition: .5s;
+        }
+
+        .btn-social-icon-instagram__square {
+            border-radius: 13px;
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            font-size: 35px;
+            line-height: 50px;
+            background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+            overflow: hidden
+        }
+
+        .btn-social-icon-instagram__square:before {
+            content: '';
+            position: absolute;
+            top: 23px;
+            left: -18px;
+            width: 60px;
+            height: 60px;
+            background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+            background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+        }
+
+        .btn-social-icon-instagram__square .fa-instagram {
+            color:white;
+            line-height: 50px;
+            position: relative;
+            z-index: 2
+        }
+        .btn-social-flat { 
+            color: #484848;
+            display: inline-block;
+            height: 50px;
+            font-size: 25px;
+            line-height: 50px;
+            background: #eaeef1;
+            text-decoration: none;
+            margin: 1em;
+            }
+
+            .btn-social-flat-icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            color: white;
+            }
+            .btn-social-flat-icon i {
+            font-size: 25px;
+            line-height: 50px;
+            transition: .3s;
+            }
+            .btn-social-flat-text {
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+            }
+
+            .btn-social-flat-icon--twitter {
+            background:#1da1f3;
+            }
+            .btn-social-flat-icon--facebook {
+            background:#3b75d4;
+            }
+            .btn-social-flat-icon--feedly {
+            background:#7ece46;
+            }
+            .btn-social-flat-icon--pocket {
+            background:#fd7171;
+            }
+            .btn-social-flat:hover .btn-social-flat-icon i {
+            -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    
+    <a href="https://www.instagram.com/noroshi_official/" class="btn-social-icon-instagram">
+        <span class="btn-social-icon-instagram__square"><i class="fab fa-instagram"></i></span> Follow Me
+    </a>
+    <a href="https://twitter.com/NOROSHIOFFICIAL" class="btn-social-flat">
+        <span class="btn-social-flat-icon btn-social-flat-icon--twitter">
+          <i class="fab fa-twitter"></i>
+        </span>
+        <span class="btn-social-flat-text">Twitter</span>
+    </a>
+</body>
+</html>
