@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noroshi</title>
-    <link rel="icon" type="image/x-icon" href="/Users/musashi/noroshi/noroshi_pic/favicon.png">
-    <link rel="apple-touch-icon" sizes="300x300" href="/Users/musashi/noroshi/noroshi_pic/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.png">
+    <link rel="apple-touch-icon" sizes="300x300" href="/static/favicon.png">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <style>
         body{
@@ -21,7 +21,7 @@
             color: #2e6ca5;
             font-size: 25px;
             text-decoration: none;
-            margin-top: 100px;
+            
         }
 
         .btn-social-icon-instagram:hover {
@@ -103,11 +103,126 @@
             -webkit-transform: rotateX(360deg);
             transform: rotateX(360deg);
             }
+
+
+            *:before,
+        *:after {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+        }
+
+        html {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 62.5%;
+        }
+
+        /* 背景用*/
+        body {
+        padding: 30px;
+        }
+
+        .btn,
+        a.btn,
+        button.btn {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.5;
+        position: relative;
+        display: inline-block;
+        padding: 1rem 4rem;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        color: #212529;
+        border-radius: 0.5rem;
+        }
+
+        .btn-radius-gradient-wrap {
+        display: inline-block;
+        margin-top: 100px;
+        padding: 0.5rem;
+
+
+        border-radius: 100vh;
+        background: #f2f5f6;
+        background: -webkit-linear-gradient(
+            to top,
+            #f2f5f6 0%,
+            #e3eaed 37%,
+            #96a1a5 100%
+        );
+        background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#f2f5f6),
+            color-stop(37%, #e3eaed),
+            to(#96a1a5)
+        );
+        background: -webkit-linear-gradient(
+            top,
+            #f2f5f6 0%,
+            #e3eaed 37%,
+            #96a1a5 100%
+        );
+        background: linear-gradient(to bottom, #f2f5f6 0%, #e3eaed 37%, #96a1a5 100%);
+
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f5f6', endColorstr='#96a1a5', GradientType=0);
+        }
+
+        a.btn-radius-gradient {
+        border-radius: 100vh;
+        background: #e3eaed;
+        background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#e3eaed),
+            to(#f2f5f6)
+        );
+        background: -webkit-linear-gradient(top, #e3eaed 0%, #f2f5f6 100%);
+        background: linear-gradient(to bottom, #e3eaed 0%, #f2f5f6 100%);
+
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3eaed', endColorstr='#f2f5f6', GradientType=0);
+        }
+
+        a.btn-radius-gradient:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        }
+
+        .Who{
+                font-size: 70px;
+                font-weight: 500;
+                animation-name: fadein;
+                animation-duration: 2s;
+            }
+            @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+            }
+
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Contact</h1>
+        <p class="Who">Contact</p>
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/jU2u79pIjC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/dCPTrqLvOqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </header>
     
     <a href="https://www.instagram.com/noroshi_official/" class="btn-social-icon-instagram">
@@ -119,5 +234,10 @@
         </span>
         <span class="btn-social-flat-text">Twitter</span>
     </a>
+    <footer>
+        <div class="btn-radius-gradient-wrap">
+            <a href="javascript:history.back()" class="btn btn-radius-gradient">topページに戻る</a>
+        </div>
+    </footer>
 </body>
 </html>

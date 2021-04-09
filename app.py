@@ -9,11 +9,11 @@ def top():
 def about():
     return render_template("about.html")
 
-@app.route("/members.html")
+@app.route("/Users/musashi/noroshi/templates/members.html")
 def members():
     return render_template("members.html")
 
-@app.route("/contact.html")
+@app.route("/Users/musashi/noroshi/templates/contact.html")
 def contact():
     return render_template("contact.html")
 

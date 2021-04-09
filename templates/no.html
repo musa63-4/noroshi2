@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noroshi</title>
-    <link rel="icon" type="image/x-icon" href="/Users/musashi/noroshi/noroshi_pic/favicon.png">
-    <link rel="apple-touch-icon" sizes="300x300" href="/Users/musashi/noroshi/noroshi_pic/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.png">
+    <link rel="apple-touch-icon" sizes="300x300" href="/static/favicon.png">
     
     <style>
         body{
@@ -14,7 +14,7 @@
             background-size: cover;
             background-attachment: fixed;
             background-position: center center;
-            background-image: url(/Users/musashi/noroshi/noroshi_pic/ooo.png);
+            background-image: url(/static/ooo.png);
         }
         
         h1{
@@ -98,6 +98,80 @@
             display: block;
         }
         }
+        .cp_cssslider {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	margin: 2em auto;
+	border: 10px solid #ffffff;
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.cp_slide_item {
+	width: 300px;
+	height: 200px;
+	float: left;
+	position: relative;
+}
+.cp_slidewrapper {
+	width: 500%;/* slideの枚数×100% */
+	position: relative;
+	left: 0;
+	animation: slider 20s infinite ease;/* スピード */
+}
+@-webkit-keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	40% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	60% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	80% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+@keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	40% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	60% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	80% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
 
         
     </style>
@@ -106,7 +180,7 @@
     <header class="header-5">
         <div class="header-inner">
           <div class="logo">
-            <img src="/Users/musashi/noroshi/noroshi_pic/logo.png">
+            <img src="/static/logo.png">
           </div>
           <nav class="header-nav">
             <ul class="header-nav-list">
@@ -124,6 +198,8 @@
     </header>
     
     <h1>Noroshi</h1>
+
+
     
 
 

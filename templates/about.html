@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noroshi</title>
-    <link rel="icon" type="image/x-icon" href="/Users/musashi/noroshi/noroshi_pic/favicon.png">
-    <link rel="apple-touch-icon" sizes="300x300" href="/Users/musashi/noroshi/noroshi_pic/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.png">
+    <link rel="apple-touch-icon" sizes="300x300" href="/static/favicon.png">
     <script src="https://kit.fontawesome.com/b02d782163.js" crossorigin="anonymous"></script>
     <style>
         body{
@@ -19,13 +19,15 @@
             font-size: 70px;
             font-weight: 500;
         }
+        .nothing{
+            margin-top: 10px;
+        }
         .first{
-            margin-top: 100px;
+            margin-top: 40px;
         }
         .pic_three{
             display: inline-block;
             text-align: center;
-            margin-top: 180px;
         }
         
         *:before,
@@ -211,17 +213,124 @@
             -webkit-transform: rotateX(360deg);
             transform: rotateX(360deg);
             }
-
+            .Who{
+                font-size: 70px;
+                font-weight: 500;
+                animation-name: fadein;
+                animation-duration: 2s;
+            }
+            @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+            }
+            .Nothing{
+                animation-name: fadein;
+                animation-duration: 8s;
+            }
+            @keyframes fadein {
+            from{
+                    opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+            }
+.cp_cssslider {
+	overflow: hidden;
+	margin: 2em auto;
+	border: 10px solid #ffffff;
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+    height: 500px;
+    width: 660px
+}
+.cp_slide_item {
+	float: left;
+	position: relative;
+    height: 500px;
+    width: 660px;
+}
+.cp_slidewrapper {
+	width: 500%;/* slideの枚数×100% */
+	position: relative;
+	left: 0;
+	animation: slider 20s infinite ease;/* スピード */
+}
+@-webkit-keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	40% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	60% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	80% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+@keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	40% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	60% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	80% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
     </style>
 </head>
 
 <body>
-    <p class="Who">Who is Noroshi</p>
+    <p class="Who">Noroshi</p>
+    <p class="Nothing">-Nothing Is Impossible-</p>
     <p class="first">千葉県松戸市を拠点とするロックバンド、<br>メンバー全員が中学の同級生でノリと勢いで2018年に結成した。</p>
-    <div class="pic_three">
-        <img src="/Users/musashi/noroshi/noroshi_pic/IMG_7963.jpg">
-        <p>グループ名の狼煙とは、合図や行動のきっかけになるもの<br>だからNOROSHIの音楽を聞いてくれたあなたが一歩を踏み出すきっかけになれるように活動している。</p>
-    </div>
+        <div class="cp_cssslider">
+            <div class="cp_slidewrapper">
+                <div class="cp_slide_item"><img src="/static/IMG_7963.jpg"></div>
+                <div class="cp_slide_item"><img src="/static/IMG_8009.jpg"></div>
+                <div class="cp_slide_item"><img src="/static/IMG_8010.jpg"></div>
+                <div class="cp_slide_item"><img src="/static/IMG_7950.jpg"></div>
+                <div class="cp_slide_item"><img src="/static/about.png"></div>
+            </div>
+        </div>
+        <p>グループ名の狼煙とは、合図や行動のきっかけになるもの<br>だからNOROSHIの音楽を聞いてくれたあなたが一歩を踏み出すきっかけになれるように<br>活動している。</p>
+    
     <a href="https://www.instagram.com/noroshi_official/" class="btn-social-icon-instagram">
         <span class="btn-social-icon-instagram__square"><i class="fab fa-instagram"></i></span> Instagram
     </a>
